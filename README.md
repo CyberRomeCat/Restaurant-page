@@ -1,2 +1,2 @@
 # Restaurant-page
-Project restaurant page to apply npm and webpack
+Project restaurant page from TOP to apply npm and webpack
