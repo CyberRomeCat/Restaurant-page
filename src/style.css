@@ -1,0 +1,14 @@
+.headline {
+    font-size: 3.5rem;
+}
+
+#img {
+    height: 40rem;
+    width: 40rem;
+    background: url('./gnocci.jpg');
+}
+
+#content {
+    font-size: 1.5em;
+    color: maroon;
+}
