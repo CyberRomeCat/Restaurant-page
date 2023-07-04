@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    overflow: hidden;
+}
+
+.submenu {
+    display: flex;
+    gap: 6rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    letter-spacing: 0.8rem;
+    margin: auto 0;
+    font-weight: bolder;
+}
+
+.tabs {
+    font-size: 1.5em;
+    margin: auto 0;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.tabs:hover::before {
+    content: "";
+    background-image:url(./home-pge-imgs/noun-sparkle-4651469.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65px;
+    width: 5%;
+    height: 5%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background: #E4C097;
+}
