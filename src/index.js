@@ -30,7 +30,7 @@ function headline() {
     home.addEventListener('click',() => {
         if (content.lastElementChild.classList == 'main') {
             content.removeChild(content.lastElementChild);
-        }
+        };
         home();
     });
 
