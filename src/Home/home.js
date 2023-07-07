@@ -1,4 +1,4 @@
-function home() {
+function homePage() {
     const main = document.createElement('div');
     main.classList.add('main');
     content.appendChild(main);
@@ -24,4 +24,4 @@ function home() {
     main.appendChild(img2); 
 };
 
-export default home
+export default homePage;

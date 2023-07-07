@@ -1,0 +1,85 @@
+.tag-name-contact {
+    background-image: url(./imgs/tag-contact.jpeg);
+}
+
+.white-container-second {
+    background: white;
+    height: min(50rem,90%);
+    width: (70rem,90%);
+    align-self: center;
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: 0.4fr 1fr 0.6fr;
+}
+
+.container-info {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.map {
+    background-image: url(imgs/map.jpeg);
+    background-repeat: no-repeat;
+    width: 25rem;
+    justify-self: center;
+}
+
+.container-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 25rem;
+}
+
+.location,
+.time,
+.mail {
+    font-weight:600;
+    font-size: xx-large;
+    padding-top: 15px;
+}
+
+.location::before {
+    position: absolute;
+    content: "";
+    background-image: url(./imgs/map-marker.svg);
+    background-repeat: no-repeat;
+    right: 43.5%;
+    top: 35.4%;
+    height: 2.5rem;
+    width:2.5rem;
+    padding-left: 10px;
+}
+
+.time::before {
+    position: absolute;
+    content: "";
+    background-image: url(./imgs/clock-time-three.svg);
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    right: 43.5%;
+    top: 49%;
+    height: 2.2rem;
+    width:2.2rem;
+}
+
+.mail::before {
+    position: absolute;
+    content: "";
+    background-image: url(./imgs/mailbox.svg);
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    top: 62.8%;
+    right: 43.5%;
+    height: 2.3rem;
+    width:2.3rem;
+}
+
+.quote {
+    justify-self: center;
+    align-self: center;
+    font-style: italic;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+

@@ -3,46 +3,121 @@
     padding: 0;
 }
 
-#content {
-    height: 100vh;
-    max-width: 100vw;
-    display: grid;
-    grid-template-rows: 0.5fr 4fr;
-    overflow: hidden;
-}
-
-.submenu {
+.mainMenu {
     display: flex;
-    gap: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    z-index: -2;
 }
 
-.title {
-    font-size: 2.5rem;
-    letter-spacing: 0.8rem;
-    margin: auto 0;
-    font-weight: bolder;
-}
-
-.tabs {
-    font-size: 1.5em;
-    margin: auto 0;
-    letter-spacing: 3px;
-    cursor: pointer;
-}
-
-.tabs:hover::before {
-    content: "";
-    background-image:url(./home-pge-imgs/noun-sparkle-4651469.svg);
-    background-repeat: no-repeat;
+.paimon {
+    left: 12rem;
     position: absolute;
-    top: 65px;
-    width: 5%;
-    height: 5%;
+    background-image: url('./menu-imgs/paimon-wants-food.png');
+    background-repeat: no-repeat;
+    height: 21rem;
+    width: 20rem;
 }
-
 
 .container {
-    display: flex;
-    justify-content: space-around;
-    background: #E4C097;
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    height: min(49rem,90%);
+    width: min(80rem,80%);
+    background-color: #E4C097
 }
+
+.white-container {
+    background: white;
+    height: min(50rem,90%);
+    width: (70rem,90%);
+    align-self: center;
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: 0.4fr repeat(2,1fr);
+}
+
+.con,
+.contain {
+    display: inline-flex;
+    height: 16.5rem;
+    justify-content: space-evenly;
+}
+
+.soup,.cms,.egg,
+.tofu,.shrimp-card {
+    background-repeat: no-repeat;
+    height: 16.5rem;
+    width: 13rem;
+}
+
+.soup {
+    background-image: url('./menu-imgs/soup-card.jpeg');
+}
+
+.cms {
+    background-image: url(./menu-imgs/CMS-card.jpeg);
+}
+
+.egg {
+    background-image: url('./menu-imgs/fullmoon-egg-card.jpeg');
+}
+
+.tofu {
+    background-image: url(./menu-imgs/almond-tofu-card.jpeg);
+}
+
+.shrimp-card {
+    background-image: url('./menu-imgs/shrimp-balls-card.jpeg');
+
+}
+
+.sparkle {
+   background-image: url(./menu-imgs/shimmer.svg); 
+   background-repeat: no-repeat;
+   height: 50px;
+   width:50px;
+   padding: 1rem;
+   align-self:baseline;
+}
+
+.container > .sparkle + .sparkle{
+    align-self: self-end;
+}
+
+.tag-name-menu,
+.tag-name-contact {
+    background-repeat: no-repeat;
+    height: 5rem;
+    width: 42rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.tag-name-menu {
+    background-image: url(./menu-imgs/tag-name-menu.png);
+}
+
+.container > .sparkle + .white-container + .sparkle,
+.container > .sparkle + .white-container + .sparkle + .sparkle + .sparkle{
+    justify-self: end;
+}
+
+.vector {
+    position: absolute;
+    background-image: url('./menu-imgs/vector.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+

@@ -1,31 +1,53 @@
-function head() {
-    const content = document.getElementById('content');
+function menuPage() {
+    const mainMenu = document.createElement('div');
+    mainMenu.classList.add('mainMenu');
+    content.appendChild(mainMenu);
     const container = document.createElement('div');
     container.classList.add('container');
-    content.appendChild(container);
-    const title = document.createElement('p');
-    title.classList.add('title');
-    title.textContent = 'Wanmin Restaurant';
-    container.appendChild(title);
-    const subMenu = document.createElement('div');
-    subMenu.classList.add('submenu');
-    container.appendChild(subMenu);
-    const home = document.createElement('div');
-    home.classList.add('tabs');
-    home.textContent = 'Home';
-    subMenu.appendChild(home);
-    const menu = document.createElement('div');
-    menu.classList.add('tabs');
-    menu.textContent = 'Menu';
-    subMenu.appendChild(menu);
-    const contact = document.createElement('div');
-    contact.classList.add('tabs');
-    contact.textContent = 'Contact';
-    subMenu.appendChild(contact);
+    mainMenu.appendChild(container);
+    makeSparkle();
+    const whiteContainer = document.createElement('div');
+    whiteContainer.classList.add('white-container');
+    container.appendChild(whiteContainer);
+    makeSparkle();
+    makeSparkle();
+    makeSparkle();
+    const tagName = document.createElement('div');
+    tagName.classList.add('tag-name-menu');
+    whiteContainer.appendChild(tagName);
+    const containerCard = document.createElement('div');
+    containerCard.classList.add('con');
+    whiteContainer.appendChild(containerCard);
+    const shrimp = document.createElement('div');
+    shrimp.classList.add('shrimp-card');
+    containerCard.appendChild(shrimp);
+    const soup = document.createElement('div');
+    soup.classList.add('soup');
+    containerCard.appendChild(soup);
+    const egg = document.createElement('div');
+    egg.classList.add('egg');
+    containerCard.appendChild(egg);
+    const containerCard2 = document.createElement('div');
+    containerCard2.classList.add('contain');
+    whiteContainer.appendChild(containerCard2);
+    const tofu = document.createElement('div');
+    tofu.classList.add('tofu');
+    containerCard2.appendChild(tofu);
+    const Cms = document.createElement('div');
+    Cms.classList.add('cms');
+    containerCard2.appendChild(Cms);
+    const paimon = document.createElement('div');
+    paimon.classList.add('paimon');
+    mainMenu.appendChild(paimon);
+    const vector = document.createElement('div');
+    vector.classList.add('vector');
+    mainMenu.appendChild(vector);
 
-    home.addEventListener('click',() => {
-        alert('it wokrs')
-    })
-}
+    function makeSparkle() {
+        const sparkle = document.createElement('div');
+        sparkle.classList.add('sparkle');
+        container.appendChild(sparkle);
+    };
+};
 
-export default head;
+export default menuPage;

@@ -1,19 +1,22 @@
-import home from './Home/home.js';
+import homePage from './Home/home.js';
 import './Home/style.css';
-import head from './Menu/menu.js';
+import menuPage from './Menu/menu.js';
+import './Menu/style.css';
+import contactPage from './Contact/contact.js';
+import './Contact/style.css';
 
 function headline() {
     const content = document.getElementById('content');
-    const container = document.createElement('div');
-    container.classList.add('container');
-    content.appendChild(container);
+    const header = document.createElement('div');
+    header.classList.add('header');
+    content.appendChild(header);
     const title = document.createElement('p');
     title.classList.add('title');
     title.textContent = 'Wanmin Restaurant';
-    container.appendChild(title);
+    header.appendChild(title);
     const subMenu = document.createElement('div');
     subMenu.classList.add('submenu');
-    container.appendChild(subMenu);
+    header.appendChild(subMenu);
     const home = document.createElement('div');
     home.classList.add('tabs');
     home.textContent = 'Home';
@@ -28,22 +31,29 @@ function headline() {
     subMenu.appendChild(contact);
     
     home.addEventListener('click',() => {
-        if (content.lastElementChild.classList == 'main') {
+        if (content.lastElementChild.classList == 'main' || content.lastElementChild.classList == 'mainMenu' || content.lastElementChild.classList == 'contact') {
             content.removeChild(content.lastElementChild);
         };
-        home();
+        homePage();
     });
 
     menu.addEventListener('click', () => {
-        if (content.lastElementChild.classList == 'main') {
+        if (content.lastElementChild.classList == 'main' || content.lastElementChild.classList == 'mainMenu' || content.lastElementChild.classList == 'contact') {
             content.removeChild(content.lastElementChild);
-        }
+        };
+        menuPage();
+    });
+
+    contact.addEventListener('click', () => {
+        if (content.lastElementChild.classList == 'main' || content.lastElementChild.classList == 'mainMenu' || content.lastElementChild.classList == 'contact') {
+            content.removeChild(content.lastElementChild);
+        };
+        contactPage();
     });
 };
 
 headline();
-home();
-
+contactPage();
 
 
 
