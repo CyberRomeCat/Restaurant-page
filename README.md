@@ -6,3 +6,7 @@ Project restaurant page from TOP to apply npm and webpack
 ## Things to add when i come back:
 - [ ] fix css style for compatibility for phone users
 - [ ] add animation
+## What I've learned: 
+- knowing how to use webpack at its basic form
+- knowing how to use source maps and
+- knowing how to manage website assets
