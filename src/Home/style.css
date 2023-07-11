@@ -141,11 +141,12 @@
 }
 
 #img2 {
-    top: 9rem;
-    left: 0.2rem;
+    top: -12rem;
+    left: -15rem;
     position: absolute;
     background-image: url('./home-pge-imgs/guoba.jpeg');
     background-repeat: no-repeat;
-    padding: 10rem 10rem 1rem 12rem;
-    background-size: contain;
+    width: min(20rem,90%);
+    height: 10rem;
+    background-size: cover;
 }

@@ -35,7 +35,7 @@ function homePage() {
     container.appendChild(btn);
     const img2 = document.createElement('div');
     img2.setAttribute('id','img2');
-    main.appendChild(img2); 
+    container.appendChild(img2); 
 };
 
 export default homePage;
