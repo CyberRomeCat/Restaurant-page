@@ -40,7 +40,6 @@
     height: 5%;
 }
 
-
 .header {
     display: flex;
     justify-content: space-around;
@@ -59,36 +58,46 @@
     justify-self: right;
 }
 
-.text {
+.outer-container {
     position: absolute;
-    top: 20rem;
-    left: 16rem;
-    height: 14rem;
-    width: 50rem;
-    font-size: 4rem;
+    bottom: 44%;
+    left: 15rem;
+}
+
+.container-catchy-content {
+    position: relative;
+}
+
+.text {
+    font-weight: bolder;
+    color: #804422;
+    width: min(60rem,80%);
+    font-size: clamp(2.5rem,4rem,4.5rem);
     letter-spacing: 3px;
+    padding-bottom: 4rem;
 }
 
 .box,
 .box2 {
     position: absolute;
     height: 15rem;
-    width: 25rem;
-    border: 3px solid #804422;
+    width: min(25rem,70%);
+    border: 8px solid #e4c097;
+    border-style: double;
 }
 
 .box {
-    top: 15rem;
-    left: 40rem;
-    border-left: none;
-    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    left: -8rem;
+    top: 11rem;
 }
 
 .box2 {
-    bottom: 13rem;
-    left: 10rem;
-    border-right: none;
-    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    bottom: 4rem;
+    left: 35rem;
 }
 
 .btn {
@@ -98,12 +107,9 @@
     border:2px solid black;
     font-size: 1.5rem;
     position: absolute;
-    bottom: 25rem;
-    left: 17rem;
     padding: 1.5rem 15rem;
     cursor: pointer;
     transition: 1s all ease;
-    position: relative;
     text-transform: uppercase;
     overflow: hidden;
     z-index: 1;
@@ -133,7 +139,6 @@
 .btn:hover {
     color: #f7f7f7;
 }
-
 
 #img2 {
     top: 9rem;

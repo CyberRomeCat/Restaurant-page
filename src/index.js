@@ -53,7 +53,7 @@ function headline() {
 };
 
 headline();
-contactPage();
+homePage();
 
 
 

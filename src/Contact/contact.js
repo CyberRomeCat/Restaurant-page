@@ -51,4 +51,4 @@ function contactPage() {
     };
 }
 
-export default contactPage
+export default contactPage;
